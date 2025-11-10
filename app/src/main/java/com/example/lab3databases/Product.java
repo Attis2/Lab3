@@ -27,8 +27,7 @@ public class Product {
     public double getProductPrice() { return productPrice; }
     public void setProductPrice(double productPrice) { this.productPrice = productPrice; }
 
-    @Override
-    public String toString() {
-        return productName + " - $" + productPrice;
+    public String PtoString(String separator) {
+        return productName + separator + productPrice;
     }
 }

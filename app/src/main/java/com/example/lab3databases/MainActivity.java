@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             String name = productName.getText().toString();
             Product p = dbHandler.findProduct(name);
             ArrayList<String> list = new ArrayList<>();
-            if (p != null) list.add(p.toString());
+            if (p != null) list.add(p.PtoString(" - $"));
             else list.add("No match found");
             productListView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list));
         });
